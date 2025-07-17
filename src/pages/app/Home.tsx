@@ -1,11 +1,11 @@
 import { Helmet } from "react-helmet-async";
-import imgMaps from "@/assets/maps.png";
-import imgSaneamento from "@/assets/saneamento.png";
-import imgIndicadores from "@/assets/indicadores.png";
-import imgDadosPrivados from "@/assets/dados-privados.png";
-import imgCamara from "@/assets/camara.png";
-import imgDespesa from "@/assets/despesa.png";
-import imgBancoAtos from "@/assets/imgBancoAtos.png";
+import imgMaps from "@/assets/servidor.png";
+import imgSaneamento from "@/assets/tecnologia-de-ia.png";
+import imgIndicadores from "@/assets/teste-de-software.png";
+import imgDadosPrivados from "@/assets/inteligencia-artificial.png";
+import imgCamara from "@/assets/nuvem-de-ia.png";
+import imgDespesa from "@/assets/nos-de-ia.png";
+import imgBancoAtos from "@/assets/codificacao.png";
 import { Link } from "react-router-dom";
 import { Button } from '@/components/ui/button';
 import { Eye } from 'lucide-react';
@@ -14,43 +14,43 @@ export function Home() {
     const flashcards = [
         // Seu array de flashcards continua o mesmo...
         {
-            title: "Anonimização de Dados",
+            title: "ANONIMIZAÇÃO DE DADOS",
             description: "Automatize as práticas exigidas pela LGPD e outras regulamentações de privacidade.",
             image: imgDadosPrivados,
             route: "/acompanhamentodeprodutividade",
         },
         {
-            title: "CÂMARAS EM FOCO",
+            title: "MÓDULO 2",
             description: "Panorama financeiro das câmaras municipais paraenses",
             image: imgCamara,
             route: "/camarasemfoco",
         },
         {
-            title: "PANORAMA MUNICIPAL - DESPESAS",
+            title: "MÓDULO 3",
             description: "Panorama das despesas dos municípios paraenses",
             image: imgDespesa,
             route: "/panoramamunicipal"
         },
         {
-            title: "INFORMAÇÕES DE SANEAMENTO",
+            title: "MÓDULO 4",
             description: "Informações de Saneamento Básico disponibilizadas no Sistema Nacional de Informações sobre Saneamento - SNIS",
             image: imgSaneamento,
             route: "/saneamento",
         },
         {
-            title: "INDICADORES DE SANEAMENTO",
+            title: "MÓDULO 5",
             description: "Indicadores de Saneamento Básico disponibilizadas no Sistema Nacional de informações sobre Saneamento - SNIS",
             image: imgIndicadores,
             route: "/indicadores",
         },
         {
-            title: "JURISDICIONADOS",
+            title: "MÓDULO 6",
             description: "Levantamento das pessoas jurídicas subordinadas à jurisdição do TCE-PA",
             image: imgMaps,
             route: "/jurisdicionados",
         },
         {
-            title: "BASE DE CONHECIMENTO",
+            title: "MÓDULO 7",
             description: "Consulta abrangente de atos normativos da base de dados do TCE-PA",
             image: imgBancoAtos,
             route: "/pesquisaintegrada",
