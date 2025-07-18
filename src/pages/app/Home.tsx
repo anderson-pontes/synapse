@@ -1,11 +1,11 @@
 import { Helmet } from 'react-helmet-async';
-import imgMaps from '@/assets/servidor.png';
-import imgSaneamento from '@/assets/tecnologia-de-ia.png';
-import imgIndicadores from '@/assets/teste-de-software.png';
+import imgServidor from '@/assets/servidor.png';
+import imgTecnologiaIA from '@/assets/tecnologia-de-ia.png';
+import imgTeste from '@/assets/teste-de-software.png';
 import imgDadosPrivados from '@/assets/inteligencia-artificial.png';
-import imgCamara from '@/assets/nuvem-de-ia.png';
-import imgDespesa from '@/assets/nos-de-ia.png';
-import imgBancoAtos from '@/assets/codificacao.png';
+import imgNuvem from '@/assets/nuvem-de-ia.png';
+import imgIA from '@/assets/nos-de-ia.png';
+import imgCodificacao from '@/assets/codificacao.png';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Eye } from 'lucide-react';
@@ -24,43 +24,43 @@ export function Home() {
             title: 'MÓDULO 2',
             description:
                 'O centro de controle do seu escritório, onde cada prazo e tarefa estão sob seu domínio.',
-            image: imgCamara,
-            route: '/camarasemfoco',
+            image: imgNuvem,
+            route: '/manutencao',
         },
         {
             title: 'MÓDULO 3',
             description:
                 'Alertas e notificações automáticas com base nas publicações dos diários oficiais e andamentos dos tribunais.',
-            image: imgDespesa,
-            route: '/panoramamunicipal',
+            image: imgIA,
+            route: '/manutencao',
         },
         {
             title: 'MÓDULO 4',
             description:
                 'Linha do tempo interativa com todos os eventos, documentos e comunicações.',
-            image: imgSaneamento,
-            route: '/saneamento',
+            image: imgTecnologiaIA,
+            route: '/manutencao',
         },
         {
             title: 'MÓDULO 5',
             description:
                 'Crie documentos a partir de modelos dinâmicos preenchidos com os dados do caso.',
-            image: imgIndicadores,
-            route: '/indicadores',
+            image: imgTeste,
+            route: '/manutencao',
         },
         {
             title: 'MÓDULO 6',
             description:
                 'Encontre informações em qualquer documento, incluindo PDFs escaneados, através de buscas por contexto.',
-            image: imgMaps,
-            route: '/jurisdicionados',
+            image: imgServidor,
+            route: '/manutencao',
         },
         {
             title: 'MÓDULO 7',
             description:
                 'Estatísticas sobre taxas de sucesso, tempo médio de julgamento e valores de condenação.',
-            image: imgBancoAtos,
-            route: '/pesquisaintegrada',
+            image: imgCodificacao,
+            route: '/manutencao',
         },
     ];
 
