@@ -9,10 +9,11 @@ import imgCodificacao from '@/assets/codificacao.png';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Eye } from 'lucide-react';
+import { AnimatedBackground } from '../../components/components_project/AnimatedBackgroun';
 
 export function Home() {
     const flashcards = [
-        // Seu array de flashcards continua o mesmo...
+        
         {
             title: 'ANONIMIZAÇÃO DE DADOS',
             description:
@@ -68,9 +69,13 @@ export function Home() {
         <>
             <Helmet title="Home" />
             {/* Fundo escuro para a página inteira */}
-            <div className="min-h-screen bg-slate-950 p-6 sm:p-8">
+            <div className="relative min-h-screen bg-slate-950 p-6 sm:p-8 overflow-hidden">
+                <AnimatedBackground />
                 {/* Título com gradiente no texto */}
-                <h1 className="mb-8 bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-center text-4xl font-extrabold tracking-tight text-transparent">
+
+                <div className="relative z-10">
+
+                    <h1 className="mb-8 bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-center text-4xl font-extrabold tracking-tight text-transparent">
                     Bem-vindo ao Portal Synapse!
                 </h1>
 
@@ -126,6 +131,9 @@ export function Home() {
                         </div>
                     ))}
                 </div>
+
+                </div>
+                
             </div>
         </>
     );

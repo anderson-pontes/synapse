@@ -1,0 +1,68 @@
+/* src/components/components_project/CircuitBackground.css */
+
+.circuit-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #020617; /* Cor base do nosso slate-950 */
+    overflow: hidden;
+    z-index: 0;
+}
+
+/* Camada com o padrão de circuito (sutil) */
+.circuit-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at center, rgba(79, 70, 229, 0.15) 0%, transparent 40%),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100"><path d="M0 25 H100 M25 0 V100 M50 0 V100 M75 0 V100 M0 50 H100 M0 75 H100" stroke="rgba(79, 70, 229, 0.08)" stroke-width="1"/></svg>');
+    background-size: 100px 100px;
+    opacity: 0.5;
+}
+
+/* A "faísca" de energia */
+.spark {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #60a5fa; /* Azul claro e brilhante */
+    border-radius: 50%;
+    box-shadow: 0 0 8px 2px #60a5fa, 0 0 12px 4px #4f46e5; /* Efeito de brilho (glow) */
+    animation: moveSpark 10s linear infinite;
+    opacity: 0;
+}
+
+/* Animação que move a faísca */
+@keyframes moveSpark {
+    0% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100vw); /* Move através de toda a largura da tela */
+    }
+}
+
+/* Criando múltiplas faíscas com posições e delays diferentes */
+.spark:nth-child(1) { top: 10%; animation-delay: 0s; animation-duration: 8s; }
+.spark:nth-child(2) { top: 20%; animation-delay: 2s; animation-duration: 12s; transform: scale(0.8); }
+.spark:nth-child(3) { top: 30%; animation-delay: 4s; animation-duration: 7s; }
+.spark:nth-child(4) { top: 40%; animation-delay: 1s; animation-duration: 10s; transform: scale(1.2); }
+.spark:nth-child(5) { top: 50%; animation-delay: 5s; animation-duration: 9s; }
+.spark:nth-child(6) { top: 60%; animation-delay: 3s; animation-duration: 11s; transform: scale(0.7); }
+.spark:nth-child(7) { top: 70%; animation-delay: 6s; animation-duration: 8s; }
+.spark:nth-child(8) { top: 80%; animation-delay: 0.5s; animation-duration: 13s; }
+.spark:nth-child(9) { top: 90%; animation-delay: 2.5s; animation-duration: 6s; transform: scale(1.1); }
