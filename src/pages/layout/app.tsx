@@ -1,5 +1,6 @@
 import { Header } from "@/components/components_project/Header";
 import { Outlet, useLocation } from "react-router-dom";
+import { AnimatedBackground } from '../../components/components_project/AnimatedBackgroun';
 
 export function AppLayout() {
     const { pathname } = useLocation();
@@ -10,7 +11,8 @@ export function AppLayout() {
 
     return (
         // 👇 Fundo principal da aplicação definido aqui.
-        <div className="flex min-h-screen flex-col antialiased bg-slate-950">
+        <div className="relative flex min-h-screen flex-col antialiased bg-slate-950 overflow-hidden">
+            <AnimatedBackground/>
             {/* O Header já tem seu próprio estilo sticky e de fundo, não precisa de um wrapper. */}
             <Header />
 
