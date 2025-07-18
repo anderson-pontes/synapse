@@ -19,7 +19,7 @@ export function Home() {
             description:
                 'Automatize as práticas exigidas pela LGPD e outras regulamentações de privacidade.',
             image: imgDadosPrivados,
-            route: 'https://anonimizacao.streamlit.app/',
+            route: 'uploadpdf',
         },
         {
             title: 'MÓDULO 2',
