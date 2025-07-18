@@ -28,7 +28,7 @@ export const Router = createHashRouter([
       { path: '/acordoestado', element: <AcordoEstado /> },     
       { path: '/saneamento', element: <Saneamento /> },     
       { path: '/indicadores', element: <IndicadoresSaneamento /> },     
-      { path: '/acompanhamentodeprodutividade', element: <AcompanhamentoProdutividade /> },     
+      { path: '/anonimizacaodedados', element: <AcompanhamentoProdutividade /> },     
       { path: '/camarasemfoco', element: <CamarasEmFoco /> },     
       { path: '/panoramamunicipal', element: <PanoramaMunicipalDespesas /> },     
       { path: '/pesquisaintegrada', element: <SearchPage /> },   

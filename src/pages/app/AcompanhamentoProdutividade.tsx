@@ -3,15 +3,20 @@ import { Helmet } from 'react-helmet-async';
 export function AcompanhamentoProdutividade() {
     return (
         <>
-            <Helmet title="Acompanhamento de Produtividade" />
-            <div className="h-screen w-screen flex overflow-hidden">
-                <iframe
-                    title="AB_Produtividade"
-                    className="w-full h-full"
-                    src="https://app.powerbi.com/view?r=eyJrIjoiN2JmNGE2OGUtZjJhOS00MjgzLWI2M2MtZTQ1OGVjNzQ1ZWE1IiwidCI6IjA2YjQ3Y2UyLWZmN2UtNDRjOS05M2ExLTEwZDVhYTE4M2RlNCJ9"
-                    allowFullScreen
-                    style={{ border: 'none' }}
-                />
+            <Helmet title="Panorama Municipal - Despesas" />
+            <div className="flex flex-1 flex-col items-center justify-center min-h-screen text-center p-8">
+                <h1 className="text-2xl font-semibold mb-4">Panorama Municipal - Despesas</h1>
+                <p className="mb-6 text-gray-700">
+                    O conteúdo desejado está hospedado em uma aplicação externa. Clique no botão abaixo para acessá-lo em uma nova aba.
+                </p>
+                <a
+                    href="https://anonimizacao.streamlit.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg shadow-md transition-colors"
+                >
+                    Acessar o painel externo
+                </a>
             </div>
         </>
     );
